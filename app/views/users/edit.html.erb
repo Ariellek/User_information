@@ -1,0 +1,23 @@
+<h1>Editing user information.</h1>
+
+<%= form_for @user do |u| %>
+  <div>
+    <%= u.label :first_nane %>
+    <%= u.text_field :first_name %><br>
+  </div>
+  <div>
+    <%= u.label :last_name %>
+    <%= u.text_field :last_name %><br>
+  </div>
+  <div>
+    <%= u.label :phone %>
+    <%= u.text_field :phone %><br>
+  </div>
+  <div>
+    <%= u.label :email %>
+    <%= u.text_field :email %><br>
+  </div>
+  <div>
+    <%= u.submit %>
+  </div>
+<% end %>
